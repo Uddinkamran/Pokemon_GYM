@@ -162,168 +162,192 @@ let ray_Clicker = document.getElementById("pokeBall6");
 ray_Clicker.addEventListener('click',ray);
 
 
-//*********************************************************************************
+//****************************Kevin's Pokemon****************************************************
 
-function meowth(){
-axios.get("https://fizal.me/pokeapi/api/v2/name/meowth.json")
-  .then(function(response) {
-    let meowth_img = "meowthstrum.gif";
-    let meowth_name = "Meowth";
-    let meowth_hp = response.data.stats[5].base_stat;
-    let meowth_attack = response.data.stats[4].base_stat;
-    let meowth_defense = response.data.stats[3].base_stat;
+function meow(){
+axios.get
+  ("https://fizal.me/pokeapi/api/v2/name/meowth.json")
+    .then(function(response){
 
-    let meowth_ability = response.data.abilities[0].ability.name;
-    for (let i = 0; i < response.data.abilities[i].ability.length; i++) {
-      let result = response.data.abilities[i].ability.name;
-    }
+      let name="Meowth";
+
+      let hp = response.data.stats[5].base_stat;
+      console.log("HP: ", hp);
+
+      let ability = response.data.abilities[0].ability.name;
+      for (var i = 0; i < response.data.abilities.length; i++) {
+        let results= response.data.abilities[i].ability.name;
+        console.log("Abilities: ", results);
+      }
+
+      let attack= response.data.stats[4].base_stat;
+      console.log("Attack: ", attack);
+
+      let defense= response.data.stats[3].base_stat;
+      console.log("Defense: ", defense);
+
+      let pic= "meowthstrum.gif";
+
+      let meowth = new Pokemon(name,hp,attack,defense,ability,pic);
+      meowth.display();
 
 
-    meowth = new Pokemon(meowth_img, meowth_name, meowth_hp, meowth_attack, meowth_defense, meowth_ability,);
-    meowth.display();
-
-  })
+});
 }
 
 
-function wobbuffet(){
-axios.get("https://fizal.me/pokeapi/api/v2/name/wobbuffet.json")
-  .then(function(response) {
-    let wobb_image = "wobbuffetfood.gif";
-    let wobb_name = "Wobbuffet";
-    let wobb_hp = response.data.stats[5].base_stat;
-    let wobb_attack = response.data.stats[4].base_stat;
-    let wobb_defense = response.data.stats[3].base_stat;
+function wobb(){
+  axios.get
+    ("https://fizal.me/pokeapi/api/v2/name/wobbuffet.json")
+      .then(function(response){
 
-    let wobb_ability = response.data.abilities[0].ability.name;
-    for (let i = 0; i < response.data.abilities[i].ability.length; i++) {
-      let result = response.data.abilities[i].ability.name;
+        let name="Wobbuffet";
 
-    }
+        let hp = response.data.stats[5].base_stat;
+        console.log("HP: ", hp);
+
+        let ability = response.data.abilities[0].ability.name;
+        for (var i = 0; i < response.data.abilities.length; i++) {
+          let results= response.data.abilities[i].ability.name;
+          console.log("Abilities: ", results);
+        }
+
+        let attack= response.data.stats[4].base_stat;
+        console.log("Attack: ", attack);
+
+        let defense= response.data.stats[3].base_stat;
+        console.log("Defense: ", defense);
+
+        let pic= "wobbuffetfood.gif";
+
+        let wobbuffet = new Pokemon(name,hp,attack,defense,ability,pic);
+        wobbuffet.display();
 
 
-    wobbuffet = new Pokemon(wobb_image, wobb_name, wobb_hp, wobb_attack, wobb_defense, wobb_ability);
-    wobbuffet.display();
-
-  })
+  });
 }
 
 function arbok(){
-axios.get("https://fizal.me/pokeapi/api/v2/name/arbok.json")
-  .then(function(response) {
-    let arbok_image = "arbokhiss.gif";
-    let arbok_name = "Arbok";
-    let arbok_hp = response.data.stats[5].base_stat;
-    let arbok_attack = response.data.stats[4].base_stat;
-    let arbok_defense = response.data.stats[3].base_stat;
+  axios.get
+    ("https://fizal.me/pokeapi/api/v2/name/arbok.json")
+      .then(function(response){
+
+        let name="Arbok";
+
+        let hp = response.data.stats[5].base_stat;
+        console.log("HP: ", hp);
+
+        let ability = response.data.abilities[0].ability.name;
+        for (var i = 0; i < response.data.abilities.length; i++) {
+          let results= response.data.abilities[i].ability.name;
+          console.log("Abilities: ", results);
+        }
+
+        let attack= response.data.stats[4].base_stat;
+        console.log("Attack: ", attack);
+
+        let defense= response.data.stats[3].base_stat;
+        console.log("Defense: ", defense);
+
+        let pic= "arbokhiss.gif";
+
+        let arbok = new Pokemon(name,hp,attack,defense,ability,pic);
+        arbok.display();
 
 
-    let arbok_ability = response.data.abilities[0].ability.name;
-    for (let i = 0; i < response.data.abilities[i].ability.length; i++) {
-      let result = response.data.abilities[i].ability.name;
-    }
-    arbok = new Pokemon(arbok_image, arbok_name, arbok_hp, arbok_attack, arbok_defense, arbok_ability);
-    arbok.display();
+  });
+}
+//**************************************Ana's Pokemon**************************
+function charman(){
+  axios.get
+    ("https://fizal.me/pokeapi/api/v2/name/charmander.json")
+      .then(function(response){
 
-  })
+        let name="Charmander";
+
+        let hp = response.data.stats[5].base_stat;
+        console.log("HP: ", hp);
+
+        let ability = response.data.abilities[0].ability.name;
+        for (var i = 0; i < response.data.abilities.length; i++) {
+          let results= response.data.abilities[i].ability.name;
+          console.log("Abilities: ", results);
+        }
+
+        let attack= response.data.stats[4].base_stat;
+        console.log("Attack: ", attack);
+
+        let defense= response.data.stats[3].base_stat;
+        console.log("Defense: ", defense);
+
+        let pic= "arbokhiss.gif";
+
+        let charmander = new Pokemon(name,hp,attack,defense,ability,pic);
+        charmander.display();
+
+
+  });
 }
 
-//
-//  /////////******ANAS POKEMON***************/
-// function charmander(){
-//   let charmanderURL ="https://fizal.me/pokeapi/api/v2/name/charmander.json";
-//   axios.get(charmanderURL)
-//     .then(function(response){
-//
-//       let abi = response.data.abilities;
-//       let all1 = [];
-//       for(let i=0;i<abi.length;i++){
-//         all1.push(abi[i].ability.name);
-//       }
-//
-//       let concatenate = "";
-//       for(let i=0;i<abi.length;i++){
-//         concatenate +=all1[i] + " ";
-//       }
-//
-//       let name = "charmander";
-//       let hp = response.data.stats[5].base_stat;
-//       let attack = response.data.stats[4].base_stat;
-//       let defense = response.data.stats[3].base_stat;
-//       let charr = new Pokemon(name, hp, attack, defense, concatenate, "stats1");
-//       charr.display();
-//
-//    })
-// }
-//
-//        let button = document.getElementById('fire');
-//          button.addEventListener('click', function(){
-//           charmander();
-//
-// })
-//
-//
-// function squirts(){
-//   let squirtleURL ="https://fizal.me/pokeapi/api/v2/name/squirtle.json";
-//     axios.get(squirtleURL)
-//     .then(function(response){
-//
-//       let abi2 = response.data.abilities;
-//       let all2 = [];
-//       for(let i=0;i<abi2.length;i++){
-//         all2.push(abi2[i].ability.name);
-//       }
-//
-//       let concatenate = "";
-//       for(let i=0;i<abi2.length;i++){
-//         concatenate +=all2[i] + " ";
-//       }
-//
-//       let name = "Squirtle";
-//       let hp = response.data.stats[5].base_stat;
-//       let attack = response.data.stats[4].base_stat;
-//       let defense = response.data.stats[3].base_stat;
-//
-//       let squir = new Pokemon(name,hp,attack,defense,concatenate, "stats2");
-//       squir.display();
-//     })
-// }
-//
-//        let button2 = document.getElementById('water');
-//          button2.addEventListener('click', function(){
-//           squirts();
-// })
-//
-//
-// function jiggly(){
-//   let jigglyURL ="https://fizal.me/pokeapi/api/v2/name/jigglypuff.json";
-//   axios.get(jigglyURL)
-//     .then(function(response){
-//
-//       let abi3 = response.data.abilities;
-//       let all3 = [];
-//       for(let i=0;i<abi3.length;i++){
-//         all3.push(abi3[i].ability.name);
-//       }
-//
-//       let concatenate = "";
-//       for(let i=0;i<abi3.length;i++){
-//         concatenate +=all3[i] + " ";
-//       }
-//
-//       let name = "Jigglypuff";
-//       let hp = response.data.stats[5].base_stat;
-//       let attack = response.data.stats[4].base_stat;
-//       let defense = response.data.stats[3].base_stat;
-//       let jigglypf = new Pokemon(name, hp, attack, defense, concatenate, "stats3");
-//       jigglypf.display();
-//
-//    })
-// }
-//
-// let button3 = document.getElementById('sleep');
-// sleep.addEventListener('click', function(){
-//   jiggly();
-// });
+function turtle(){
+  axios.get
+    ("https://fizal.me/pokeapi/api/v2/name/squirtle.json")
+      .then(function(response){
 
-/////////******ANAS POKEMON***************/
+        let name="Squirtle";
+
+        let hp = response.data.stats[5].base_stat;
+        console.log("HP: ", hp);
+
+        let ability = response.data.abilities[0].ability.name;
+        for (var i = 0; i < response.data.abilities.length; i++) {
+          let results= response.data.abilities[i].ability.name;
+          console.log("Abilities: ", results);
+        }
+
+        let attack= response.data.stats[4].base_stat;
+        console.log("Attack: ", attack);
+
+        let defense= response.data.stats[3].base_stat;
+        console.log("Defense: ", defense);
+
+        let pic= "arbokhiss.gif";
+
+        let squirtle = new Pokemon(name,hp,attack,defense,ability,pic);
+        squirtle.display();
+
+
+  });
+}
+
+
+function jigg(){
+  axios.get
+    ("https://fizal.me/pokeapi/api/v2/name/jigglypuff.json")
+      .then(function(response){
+
+        let name="Jigglypuff";
+
+        let hp = response.data.stats[5].base_stat;
+        console.log("HP: ", hp);
+
+        let ability = response.data.abilities[0].ability.name;
+        for (var i = 0; i < response.data.abilities.length; i++) {
+          let results= response.data.abilities[i].ability.name;
+          console.log("Abilities: ", results);
+        }
+
+        let attack= response.data.stats[4].base_stat;
+        console.log("Attack: ", attack);
+
+        let defense= response.data.stats[3].base_stat;
+        console.log("Defense: ", defense);
+
+        let pic= "arbokhiss.gif";
+
+        let jigglypuff = new Pokemon(name,hp,attack,defense,ability,pic);
+        jigglypuff.display();
+
+
+  });
+}
