@@ -2,32 +2,26 @@
   padding:0;
   margin:0;
 }
-
 #bgAll{
   background-image: url(backgroundImg2.png);
 }
-
 header{
   background-color: #4dad5b;
   padding:2%;
   text-align: center;
 }
-
 #main{
     width: 900px;
     height: 100vh;
     position: relative;
     margin: 0 auto;
 }
-
 #pokeDex{
  background-color: rgba(255, 0, 0, 0.5);
  background-size: 900px 500px;
  width: 900px;
  height: 605px;
 }
-
-
 .poke img {
   /* width: 100%; */
   width: 150px;
@@ -35,10 +29,12 @@ header{
   margin:  10px auto;
   /* border-radius: 50%; */
 }
-
 .col{
   border-style: double;
 }
 div.col {
   padding: 0px;
+}
+#trainer{
+  height: 160px;
 }
