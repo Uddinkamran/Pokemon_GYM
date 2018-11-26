@@ -11,7 +11,6 @@ class Pokemon{
     //make a div with classname product
     this.element = document.getElementById('dis');
     this.element.className = 'product';
-
   }
 
 display(){
