@@ -1,5 +1,5 @@
 
-<<<<<<< HEAD
+
 //
 //  /////////******ANAS POKEMON***************/
 // function charmander(){
