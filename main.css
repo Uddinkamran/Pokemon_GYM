@@ -26,3 +26,6 @@ header{
  width: 900px;
  height: 500px;
 }
+.col{
+  border-style: double;
+}
