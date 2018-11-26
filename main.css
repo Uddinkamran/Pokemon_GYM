@@ -4,9 +4,7 @@
 }
 
 #bgAll{
-  background-image: url(gymbck.png);
-  background-repeat: repeat-y;
-  background-size: cover;
+  background-image: url(backgroundImg2.png);
 }
 
 header{
@@ -23,10 +21,10 @@ header{
 }
 
 #pokeDex{
- background-image: url("pokepic.jpg");
+ background-color: rgba(255, 0, 0, 0.5);
  background-size: 900px 500px;
  width: 900px;
- height: 500px;
+ height: 605px;
 }
 
 
