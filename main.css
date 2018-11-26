@@ -4,7 +4,9 @@
 }
 
 #bgAll{
-  background-image: url( Image here );
+  background-image: url(gymbck.png);
+  background-repeat: repeat-y;
+  background-size: cover;
 }
 
 header{
@@ -26,6 +28,16 @@ header{
  width: 900px;
  height: 500px;
 }
+
+
+.poke img {
+  /* width: 100%; */
+  width: 150px;
+  height: 150px;
+  margin:  10px auto;
+  /* border-radius: 50%; */
+}
+
 .col{
   border-style: double;
 }
