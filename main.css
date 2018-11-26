@@ -29,3 +29,6 @@ header{
 .col{
   border-style: double;
 }
+div.col {
+  padding: 0px;
+}
