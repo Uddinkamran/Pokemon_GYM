@@ -71,12 +71,10 @@ div.col {
   height: 160px;
   width: 180px;
 }
-
 #hilda{
   height: 160px;
   width: 180px;
 }
-
 ol{
   display:inline-block;
   border-style: solid;
@@ -111,7 +109,6 @@ ol{
 .card-body{
   padding:0;
   margin:0;
-
 }
 .card-text{
   color: white;

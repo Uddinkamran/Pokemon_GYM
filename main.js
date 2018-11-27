@@ -397,4 +397,3 @@ function jigg(){
 
 //  let arbok_event = document.getElementById("poke3");
 //  arbok_event.addEventListener('click', arb);
-/
