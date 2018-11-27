@@ -42,6 +42,11 @@ header{
 div.col {
   padding: 0px;
 }
+.card {
+  width: 400px;
+  height: 450px;
+
+}
 #trainer{
   height: 160px;
 }
