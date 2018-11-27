@@ -135,100 +135,101 @@ display(){
 // });
 // }
 
-//
+
 // //****************************Kevin's Pokemon****************************************************
-//
-// function meow(){
-// axios.get
-//   ("https://fizal.me/pokeapi/api/v2/name/meowth.json")
-//     .then(function(response){
-//
-//       let name="Meowth";
-//
-//       let hp = response.data.stats[5].base_stat;
-//       console.log("HP: ", hp);
-//
-//       let ability = response.data.abilities[0].ability.name;
-//       for (var i = 0; i < response.data.abilities.length; i++) {
-//         let results= response.data.abilities[i].ability.name;
-//         console.log("Abilities: ", results);
-//       }
-//
-//       let attack= response.data.stats[4].base_stat;
-//       console.log("Attack: ", attack);
-//
-//       let defense= response.data.stats[3].base_stat;
-//       console.log("Defense: ", defense);
-//
-//       let pic= "meowthstrum.gif";
-//
-//       let meowth = new Pokemon(name,hp,attack,defense,ability,pic);
-//       meowth.display();
-//
-//
-// });
-// }
-//
-// function arb(){
-// axios.get
-//   ("https://fizal.me/pokeapi/api/v2/name/meowth.json")
-//     .then(function(response){
-//
-//       let name="Arbok";
-//
-//       let hp = response.data.stats[5].base_stat;
-//       console.log("HP: ", hp);
-//
-//       let ability = response.data.abilities[0].ability.name;
-//       for (var i = 0; i < response.data.abilities.length; i++) {
-//         let results= response.data.abilities[i].ability.name;
-//         console.log("Abilities: ", results);
-//       }
-//
-//       let attack= response.data.stats[4].base_stat;
-//       console.log("Attack: ", attack);
-//
-//       let defense= response.data.stats[3].base_stat;
-//       console.log("Defense: ", defense);
-//
-//       let pic= "arbokhiss.gif";
-//
-//       let arbok = new Pokemon(name,hp,attack,defense,ability,pic);
-//       arb.display();
-//
-//
-// });
-//
-// function wobb(){
-//   axios.get
-//     ("https://fizal.me/pokeapi/api/v2/name/wobbuffet.json")
-//       .then(function(response){
-//
-//         let name="Wobbuffet";
-//
-//         let hp = response.data.stats[5].base_stat;
-//         console.log("HP: ", hp);
-//
-//         let ability = response.data.abilities[0].ability.name;
-//         for (var i = 0; i < response.data.abilities.length; i++) {
-//           let results= response.data.abilities[i].ability.name;
-//           console.log("Abilities: ", results);
-//         }
-//
-//         let attack= response.data.stats[4].base_stat;
-//         console.log("Attack: ", attack);
-//
-//         let defense= response.data.stats[3].base_stat;
-//         console.log("Defense: ", defense);
-//
-//         let pic= "wobbuffetfood.gif";
-//
-//         let wobbuffet = new Pokemon(name,hp,attack,defense,ability,pic);
-//         wobbuffet.display();
-//
-//
-//   });
-// }
+
+function meow(){
+axios.get
+  ("https://fizal.me/pokeapi/api/v2/name/meowth.json")
+    .then(function(response){
+
+      let name="Meowth";
+
+      let hp = response.data.stats[5].base_stat;
+      console.log("HP: ", hp);
+
+      let ability = response.data.abilities[0].ability.name;
+      for (var i = 0; i < response.data.abilities.length; i++) {
+        let results= response.data.abilities[i].ability.name;
+        console.log("Abilities: ", results);
+      }
+
+      let attack= response.data.stats[4].base_stat;
+      console.log("Attack: ", attack);
+
+      let defense= response.data.stats[3].base_stat;
+      console.log("Defense: ", defense);
+
+      let pic= "meowthbounce.gif";
+
+      let meowth = new Pokemon(name,hp,attack,defense,ability,pic);
+      meowth.display();
+
+
+});
+}
+
+function arb(){
+axios.get
+  ("https://fizal.me/pokeapi/api/v2/name/meowth.json")
+    .then(function(response){
+
+      let name="Arbok";
+
+      let hp = response.data.stats[5].base_stat;
+      console.log("HP: ", hp);
+
+      let ability = response.data.abilities[0].ability.name;
+      for (var i = 0; i < response.data.abilities.length; i++) {
+        let results= response.data.abilities[i].ability.name;
+        console.log("Abilities: ", results);
+      }
+
+      let attack= response.data.stats[4].base_stat;
+      console.log("Attack: ", attack);
+
+      let defense= response.data.stats[3].base_stat;
+      console.log("Defense: ", defense);
+
+      let pic= "arbokmoving.gif";
+
+      let arbok = new Pokemon(name,hp,attack,defense,ability,pic);
+      arbok.display();
+
+
+});
+}
+
+function wobb(){
+  axios.get
+    ("https://fizal.me/pokeapi/api/v2/name/wobbuffet.json")
+      .then(function(response){
+
+        let name="Wobbuffet";
+
+        let hp = response.data.stats[5].base_stat;
+        console.log("HP: ", hp);
+
+        let ability = response.data.abilities[0].ability.name;
+        for (var i = 0; i < response.data.abilities.length; i++) {
+          let results= response.data.abilities[i].ability.name;
+          console.log("Abilities: ", results);
+        }
+
+        let attack= response.data.stats[4].base_stat;
+        console.log("Attack: ", attack);
+
+        let defense= response.data.stats[3].base_stat;
+        console.log("Defense: ", defense);
+
+        let pic= "wobbuffetwave.gif";
+
+        let wobbuffet = new Pokemon(name,hp,attack,defense,ability,pic);
+        wobbuffet.display();
+
+
+  });
+}
 //
 // //**************************************Ana's Pokemon**************************
 function charman(){
@@ -330,21 +331,21 @@ function jigg(){
 // function zoroark() {
 //   axios.get("https://fizal.me/pokeapi/api/v2/id/571.json")
 //   .then(function (response) {
-//   let somePokemon1 = new Pokemon(response.data.species.name, response.data.stats[5].base_stat, response.data.stats[4].base_stat, response.data.stats[3].base_stat, response.data.abilities[0].ability.name);
+//   let somePokemon1 = new Pokemon(response.data.species.name, response.data.stats[5].base_stat, response.data.stats[4].base_stat, response.data.stats[3].base_stat, response.data.abilities[0].ability.name, https://play.pokemonshowdown.com/sprites/xyani/zoroark.gif);
 //   somePokemon1.display()
 // })
 // }
 // function reshiram() {
 //   axios.get("https://fizal.me/pokeapi/api/v2/id/643.json")
 //   .then(function (response) {
-//   let somePokemon1 = new Pokemon(response.data.species.name, response.data.stats[5].base_stat, response.data.stats[4].base_stat, response.data.stats[3].base_stat, response.data.abilities[0].ability.name);
+//   let somePokemon1 = new Pokemon(response.data.species.name, response.data.stats[5].base_stat, response.data.stats[4].base_stat, response.data.stats[3].base_stat, response.data.abilities[0].ability.name, https://play.pokemonshowdown.com/sprites/xyani/reshiram.gif);
 //   somePokemon1.display()
 // })
 // }
 // function kartana() {
 //   axios.get("https://fizal.me/pokeapi/api/v2/id/798.json")
 //   .then(function (response) {
-//   let somePokemon1 = new Pokemon(response.data.species.name, response.data.stats[5].base_stat, response.data.stats[4].base_stat, response.data.stats[3].base_stat, response.data.abilities[0].ability.name);
+//   let somePokemon1 = new Pokemon(response.data.species.name, response.data.stats[5].base_stat, response.data.stats[4].base_stat, response.data.stats[3].base_stat, response.data.abilities[0].ability.name, https://play.pokemonshowdown.com/sprites/xyani/kartana.gif);
 //   somePokemon1.display()
 // })
 // }
@@ -386,3 +387,14 @@ function jigg(){
 
   let jiggly_Clicker = document.getElementById("poke3");
   jiggly_Clicker.addEventListener('click',jigg);
+
+// // Kevin's Event Listener
+//   let meowth_event = document.getElementById("poke1");
+//   meowth_event.addEventListener('click', meow);
+
+//  let wobbuffet_event = document.getElementById("poke2");
+//  wobbuffet_event.addEventListener('click', wobb);
+
+//  let arbok_event = document.getElementById("poke3");
+//  arbok_event.addEventListener('click', arb);
+/
