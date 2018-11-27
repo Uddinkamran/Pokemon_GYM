@@ -6,9 +6,13 @@
   background-image: url(backgroundImg3.png);
 }
 header{
-  background-color: #4dad5b;
+  background-color: rgba(253, 250, 253, .5);
   padding:2%;
   text-align: center;
+}
+h1{
+  font-size: 75px;
+  color: #2C2E2E;
 }
 #main{
     width: 900px;
