@@ -48,6 +48,10 @@ div.col {
   height: 160px;
   width:120px;
 }
+#hilda{
+  height: 160px;
+  width: 180px;
+}
 ol{
   display:inline-block;
   border-style: solid;
