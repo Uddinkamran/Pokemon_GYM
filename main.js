@@ -67,76 +67,76 @@ display(){
 }
 }
 //**********************************************Kamran's Pokemon***************
-// function ho_Oh(){
-// axios.get
-//   ("https://fizal.me/pokeapi/api/v2/name/ho-oh.json")
-//     .then(function(response){
-//       let name="Ho-oh";
-//       let hp = response.data.stats[5].base_stat;
-//       console.log("HP: ", hp);
-//       let ability = response.data.abilities[0].ability.name;
-//       for (var i = 0; i < response.data.abilities.length; i++) {
-//         let results= response.data.abilities[i].ability.name;
-//         console.log("Abilities: ", results);
-//       }
-//       let attack= response.data.stats[4].base_stat;
-//       console.log("Attack: ", attack);
-//       let defense= response.data.stats[3].base_stat;
-//       console.log("Defense: ", defense);
-//       let pic="Ho-oh.gif";
-//       let hooh = new Pokemon(name, hp, attack, defense, ability,pic);
-//       hooh.display();
-// });
-//  }
-//
-// function lu(){
-// axios.get
-//   ("https://fizal.me/pokeapi/api/v2/name/lugia.json")
-//     .then(function(response){
-//       let name = "Lugia";
-//       let hp = response.data.stats[5].base_stat;
-//       console.log("HP: ", hp);
-//       let ability = response.data.abilities[0].ability.name;
-//       for (var i = 0; i < response.data.abilities.length; i++) {
-//         let results= response.data.abilities[i].ability.name;
-//         console.log("Abilities: ", results);
-//       }
-//       let attack= response.data.stats[4].base_stat;
-//       console.log("Attack: ", attack);
-//       let defense= response.data.stats[3].base_stat;
-//       console.log("Defense: ", defense);
-//       let pic="Lugia_Shiny.gif";
-//       let lugia = new Pokemon(name,hp,attack,defense,ability,pic);
-//       lugia.display();
-// });
-// }
-//
-// function rayq(){
-// axios.get
-//   ("https://fizal.me/pokeapi/api/v2/name/rayquaza.json")
-//     .then(function(response){
-//       let name="Rayquaza";
-//       let hp = response.data.stats[5].base_stat;
-//       console.log("HP: ", hp);
-//       let ability = response.data.abilities[0].ability.name;
-//       for (var i = 0; i < response.data.abilities.length; i++) {
-//         let results= response.data.abilities[i].ability.name;
-//         console.log("Abilities: ", results);
-//       }
-//       let attack= response.data.stats[4].base_stat;
-//       console.log("Attack: ", attack);
-//       let defense= response.data.stats[3].base_stat;
-//       console.log("Defense: ", defense);
-//
-//       let pic= "ray1.gif";
-//
-//       let rayquaza = new Pokemon(name,hp,attack,defense,ability,pic);
-//       rayquaza.display();
-// });
-// }
+function ho_Oh(){
+axios.get
+  ("https://fizal.me/pokeapi/api/v2/name/ho-oh.json")
+    .then(function(response){
+      let name="Ho-oh";
+      let hp = response.data.stats[5].base_stat;
+      console.log("HP: ", hp);
+      let ability = response.data.abilities[0].ability.name;
+      for (var i = 0; i < response.data.abilities.length; i++) {
+        let results= response.data.abilities[i].ability.name;
+        console.log("Abilities: ", results);
+      }
+      let attack= response.data.stats[4].base_stat;
+      console.log("Attack: ", attack);
+      let defense= response.data.stats[3].base_stat;
+      console.log("Defense: ", defense);
+      let pic="Ho-oh.gif";
+      let hooh = new Pokemon(name, hp, attack, defense, ability,pic);
+      hooh.display();
+});
+ }
+
+function lu(){
+axios.get
+  ("https://fizal.me/pokeapi/api/v2/name/lugia.json")
+    .then(function(response){
+      let name = "Lugia";
+      let hp = response.data.stats[5].base_stat;
+      console.log("HP: ", hp);
+      let ability = response.data.abilities[0].ability.name;
+      for (var i = 0; i < response.data.abilities.length; i++) {
+        let results= response.data.abilities[i].ability.name;
+        console.log("Abilities: ", results);
+      }
+      let attack= response.data.stats[4].base_stat;
+      console.log("Attack: ", attack);
+      let defense= response.data.stats[3].base_stat;
+      console.log("Defense: ", defense);
+      let pic="Lugia_Shiny.gif";
+      let lugia = new Pokemon(name,hp,attack,defense,ability,pic);
+      lugia.display();
+});
+}
+
+function rayq(){
+axios.get
+  ("https://fizal.me/pokeapi/api/v2/name/rayquaza.json")
+    .then(function(response){
+      let name="Rayquaza";
+      let hp = response.data.stats[5].base_stat;
+      console.log("HP: ", hp);
+      let ability = response.data.abilities[0].ability.name;
+      for (var i = 0; i < response.data.abilities.length; i++) {
+        let results= response.data.abilities[i].ability.name;
+        console.log("Abilities: ", results);
+      }
+      let attack= response.data.stats[4].base_stat;
+      console.log("Attack: ", attack);
+      let defense= response.data.stats[3].base_stat;
+      console.log("Defense: ", defense);
+
+      let pic= "ray1.gif";
+
+      let rayquaza = new Pokemon(name,hp,attack,defense,ability,pic);
+      rayquaza.display();
+});
+}
 
 
-// //****************************Kevin's Pokemon****************************************************
+ //****************************Kevin's Pokemon****************************************************
 
 function meow(){
 axios.get
@@ -326,31 +326,31 @@ function jigg(){
   });
 }
 
-//
-// Shakiem's Pokemon
-// function zoroark() {
-//   axios.get("https://fizal.me/pokeapi/api/v2/id/571.json")
-//   .then(function (response) {
-//   let somePokemon1 = new Pokemon(response.data.species.name, response.data.stats[5].base_stat, response.data.stats[4].base_stat, response.data.stats[3].base_stat, response.data.abilities[0].ability.name, https://play.pokemonshowdown.com/sprites/xyani/zoroark.gif);
-//   somePokemon1.display()
-// })
-// }
-// function reshiram() {
-//   axios.get("https://fizal.me/pokeapi/api/v2/id/643.json")
-//   .then(function (response) {
-//   let somePokemon1 = new Pokemon(response.data.species.name, response.data.stats[5].base_stat, response.data.stats[4].base_stat, response.data.stats[3].base_stat, response.data.abilities[0].ability.name, https://play.pokemonshowdown.com/sprites/xyani/reshiram.gif);
-//   somePokemon1.display()
-// })
-// }
-// function kartana() {
-//   axios.get("https://fizal.me/pokeapi/api/v2/id/798.json")
-//   .then(function (response) {
-//   let somePokemon1 = new Pokemon(response.data.species.name, response.data.stats[5].base_stat, response.data.stats[4].base_stat, response.data.stats[3].base_stat, response.data.abilities[0].ability.name, https://play.pokemonshowdown.com/sprites/xyani/kartana.gif);
-//   somePokemon1.display()
-// })
-// }
-//
-// // Dennys' Pokemon
+
+// ************************************ Shakiem's Pokemon **********************
+function zoroark() {
+  axios.get("https://fizal.me/pokeapi/api/v2/id/571.json")
+  .then(function (response) {
+  let somePokemon1 = new Pokemon(response.data.species.name, response.data.stats[5].base_stat, response.data.stats[4].base_stat, response.data.stats[3].base_stat, response.data.abilities[0].ability.name, "https://play.pokemonshowdown.com/sprites/xyani/zoroark.gif");
+  somePokemon1.display()
+})
+}
+function reshiram() {
+  axios.get("https://fizal.me/pokeapi/api/v2/id/643.json")
+  .then(function (response) {
+  let somePokemon1 = new Pokemon(response.data.species.name, response.data.stats[5].base_stat, response.data.stats[4].base_stat, response.data.stats[3].base_stat, response.data.abilities[0].ability.name, "https://play.pokemonshowdown.com/sprites/xyani/reshiram.gif");
+  somePokemon1.display()
+})
+}
+function kartana() {
+  axios.get("https://fizal.me/pokeapi/api/v2/id/798.json")
+  .then(function (response) {
+  let somePokemon1 = new Pokemon(response.data.species.name, response.data.stats[5].base_stat, response.data.stats[4].base_stat, response.data.stats[3].base_stat, response.data.abilities[0].ability.name, "https://play.pokemonshowdown.com/sprites/xyani/kartana.gif");
+  somePokemon1.display()
+})
+}
+
+// **************************** Dennys' Pokemon ********************************
 // axios.get('https://fizal.me/pokeapi/api/v2/name/lopunny.json')
 //   .then(function (response) {
 //     let lopunny = new Pokemon(response.data.species.name, response.data.stats[5].base_stat, response.data.stats[4].base_stat, response.data.stats[3].base_stat, response.data.abilities[0].ability.name, response.data.species.name, response.data.sprites.front_shiny);
@@ -368,8 +368,7 @@ function jigg(){
 //   });
 
 
-
-//*******************Event Listener********************************************
+//******************* Kamran Event Listener ********************************************
   //  let hoOh_Clicker = document.getElementById("poke1");
   //  hoOh_Clicker.addEventListener('click',ho_Oh);
   //
@@ -379,16 +378,18 @@ function jigg(){
   // let ray_Clicker = document.getElementById("poke3");
   // ray_Clicker.addEventListener('click',rayq);
 
-  let charm_Clicker = document.getElementById("poke1");
-  charm_Clicker.addEventListener('click',charman);
+ //****************************Ana's listner************************************
+//   let charm_Clicker = document.getElementById("poke1");
+//   charm_Clicker.addEventListener('click',charman);
+//
+//   let squirtle_Clicker = document.getElementById("poke2");
+//   squirtle_Clicker.addEventListener('click',turtle);
+//
+//   let jiggly_Clicker = document.getElementById("poke3");
+//   jiggly_Clicker.addEventListener('click',jigg);
 
-  let squirtle_Clicker = document.getElementById("poke2");
-  squirtle_Clicker.addEventListener('click',turtle);
 
-  let jiggly_Clicker = document.getElementById("poke3");
-  jiggly_Clicker.addEventListener('click',jigg);
-
-// // Kevin's Event Listener
+ //************************* Kevin's Event Listener ****************************
 //   let meowth_event = document.getElementById("poke1");
 //   meowth_event.addEventListener('click', meow);
 
@@ -397,4 +398,14 @@ function jigg(){
 
 //  let arbok_event = document.getElementById("poke3");
 //  arbok_event.addEventListener('click', arb);
-/
+
+
+// //********************** Shakiem's event listener *****************************
+//  let zoro = document.getElementById("poke1");
+//  zoro.addEventListener('click',zoroark);
+//
+// let reshi = document.getElementById("poke2");
+// reshi.addEventListener('click',reshiram);
+//
+// let kart = document.getElementById("poke3");
+// kart.addEventListener('click',kartana);
