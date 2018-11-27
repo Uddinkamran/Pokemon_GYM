@@ -84,7 +84,7 @@ axios.get
       console.log("Attack: ", attack);
       let defense= response.data.stats[3].base_stat;
       console.log("Defense: ", defense);
-      let pic="Ho-oh.gif";
+      let pic="Ho-Oh.gif";
       let hooh = new Pokemon(name, hp, attack, defense, ability,pic);
       hooh.display();
 });
