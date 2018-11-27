@@ -3,7 +3,7 @@
   margin:0;
 }
 #bgAll{
-  background-image: url(backgroundImg2.png);
+  background-image: url(backgroundImg3.png);
 }
 header{
   background-color: #4dad5b;
@@ -20,7 +20,16 @@ header{
  background-color: rgba(255, 0, 0, 0.5);
  background-size: 900px 500px;
  width: 900px;
- height: 605px;
+ height: 695px;
+}
+#imgHolder{
+  position: absolute;
+  width: 445px;
+  height: 525px;
+}
+#pokeSize{
+  width: 400px;
+  height:300px;
 }
 .poke img {
   /* width: 100%; */
@@ -37,4 +46,11 @@ div.col {
 }
 #trainer{
   height: 160px;
+  width:120px;
+}
+ol{
+  display:inline-block;
+  border-style: solid;
+  border-color: darkred;
+  border-spacing: inherit;
 }
