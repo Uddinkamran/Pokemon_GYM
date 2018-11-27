@@ -27,6 +27,7 @@ class Pokemon{
 display(){
 
   let pokePic = document.getElementById("pPic");
+  pokePic.src = ""
   pokePic.src = this.pokePic;
 //  this.element.appendChild(pokePic);
 
@@ -351,75 +352,41 @@ function kartana() {
 }
 
 //***************************** Dennys' Pokemon***************************
-// function lopunny(){
-// axios.get('https://fizal.me/pokeapi/api/v2/name/lopunny.json')
-//   .then(function (response) {
-//     let lopunny = new Pokemon(response.data.species.name, response.data.stats[5].base_stat, response.data.stats[4].base_stat, response.data.stats[3].base_stat, response.data.abilities[0].ability.name,  "http://i.imgur.com/Y5MhMmG.gif");
-//         lopunny.display();
-//   });
-// }
-//
-//
-// // function gardevior(){
-// //   axios.get('https://fizal.me/pokeapi/api/v2/name/gardevoir.json')
-// //   .then(function (response) {
-// //         let gardevior = new Pokemon(response.data.species.name, response.data.stats[5].base_stat, response.data.stats[4].base_stat, response.data.stats[3].base_stat, response.data.abilities[0].ability.name,  "http://rs38.pbsrc.com/albums/e102/GlowCat/gardevoir_zps7b3a4dab.gif~c200");
-// //         gardevior.display();
-// //   });
-// // }
-// // function primarina(){
-// // axios.get('https://fizal.me/pokeapi/api/v2/name/primarina.json')
-// //   .then(function (response) {
-// //     let primarina = new Pokemon(response.data.species.name, response.data.stats[5].base_stat, response.data.stats[4].base_stat, response.data.stats[3].base_stat, response.data.abilities[0].ability.name, "https://i.pinimg.com/originals/e4/d2/4b/e4d24b35acd40b51b2d292762207a737.gif");
-// //         primarina.display();
-// //   });
-// // }
-// //
-// /
+function lopunny(){
+axios.get('https://fizal.me/pokeapi/api/v2/name/lopunny.json')
+  .then(function (response) {
+    let lopunny = new Pokemon(response.data.species.name, response.data.stats[5].base_stat, response.data.stats[4].base_stat, response.data.stats[3].base_stat, response.data.abilities[0].ability.name,  "http://i.imgur.com/Y5MhMmG.gif");
+        lopunny.display();
+  });
+}
+function gardevior(){
+  axios.get('https://fizal.me/pokeapi/api/v2/name/gardevoir.json')
+  .then(function (response) {
+        let gardevior = new Pokemon(response.data.species.name, response.data.stats[5].base_stat, response.data.stats[4].base_stat, response.data.stats[3].base_stat, response.data.abilities[0].ability.name,  "http://rs38.pbsrc.com/albums/e102/GlowCat/gardevoir_zps7b3a4dab.gif~c200");
+        gardevior.display();
+  });
+}
+function primarina(){
+axios.get('https://fizal.me/pokeapi/api/v2/name/primarina.json')
+  .then(function (response) {
+    let primarina = new Pokemon(response.data.species.name, response.data.stats[5].base_stat, response.data.stats[4].base_stat, response.data.stats[3].base_stat, response.data.abilities[0].ability.name, "https://i.pinimg.com/originals/e4/d2/4b/e4d24b35acd40b51b2d292762207a737.gif");
+        primarina.display();
+  });
+}
+
 
 //******************* Kamran Event Listener ********************************************
-  //  let hoOh_Clicker = document.getElementById("poke1");
-  //  hoOh_Clicker.addEventListener('click',ho_Oh);
-  //
-  // let lugia_Clicker = document.getElementById("poke2");
-  // lugia_Clicker.addEventListener('click',lu);
-  //
-  // let ray_Clicker = document.getElementById("poke3");
-  // ray_Clicker.addEventListener('click',rayq);
+
 
 
  //****************************Ana's listner************************************
-//   let charm_Clicker = document.getElementById("poke1");
-//   charm_Clicker.addEventListener('click',charman);
-//
-//   let squirtle_Clicker = document.getElementById("poke2");
-//   squirtle_Clicker.addEventListener('click',turtle);
-//
-//   let jiggly_Clicker = document.getElementById("poke3");
-//   jiggly_Clicker.addEventListener('click',jigg);
 
 
  //************************* Kevin's Event Listener ****************************
-//   let meowth_event = document.getElementById("poke1");
-//   meowth_event.addEventListener('click', meow);
-
-//  let wobbuffet_event = document.getElementById("poke2");
-//  wobbuffet_event.addEventListener('click', wobb);
-
-//  let arbok_event = document.getElementById("poke3");
-//  arbok_event.addEventListener('click', arb);
 
 
 
 // //********************** Shakiem's event listener *****************************
-//  let zoro = document.getElementById("poke1");
-//  zoro.addEventListener('click',zoroark);
-//
-// let reshi = document.getElementById("poke2");
-// reshi.addEventListener('click',reshiram);
-//
-// let kart = document.getElementById("poke3");
-// kart.addEventListener('click',kartana);
 
 // ********************************Denny************************************
 // let lopunny_event = document.getElementById("poke1");
@@ -430,3 +397,71 @@ function kartana() {
 //
 // let primarina_event = document.getElementById("poke3");
 // primarina_event.addEventListener('click', primarina);
+
+let t1 = document.getElementById("trainer1");
+let t2 = document.getElementById("trainer2");
+let t3 = document.getElementById("hilda");
+let t4 = document.getElementById("trainer3");
+let t5 = document.getElementById("trainer");
+
+let fullImg = document.getElementById("imgHolder")
+function trainer1(){
+  fullImg.src
+  let meowth_event = document.getElementById("poke1");
+  meowth_event.addEventListener('click', meow);
+
+ let wobbuffet_event = document.getElementById("poke2");
+ wobbuffet_event.addEventListener('click', wobb);
+
+ let arbok_event = document.getElementById("poke3");
+ arbok_event.addEventListener('click', arb);
+}
+t1.addEventListener("click", trainer1)
+
+function trainer2(){
+  let hoOh_Clicker = document.getElementById("poke4");
+  hoOh_Clicker.addEventListener('click',ho_Oh);
+
+ let lugia_Clicker = document.getElementById("poke5");
+ lugia_Clicker.addEventListener('click',lu);
+
+ let ray_Clicker = document.getElementById("poke6");
+ ray_Clicker.addEventListener('click',rayq);
+}
+t2.addEventListener("click", trainer2)
+
+function trainer3(){
+  let lopunny_event = document.getElementById("poke7");
+  lopunny_event.addEventListener('click', lopunny);
+
+  let gardevior_event = document.getElementById("poke8");
+  gardevior_event.addEventListener('click', gardevior);
+
+  let primarina_event = document.getElementById("poke9");
+  primarina_event.addEventListener('click', primarina);
+}
+t3.addEventListener("click", trainer3)
+
+function trainer4(){
+  let zoro = document.getElementById("poke10");
+  zoro.addEventListener('click',zoroark);
+
+  let reshi = document.getElementById("poke11");
+  reshi.addEventListener('click',reshiram);
+
+  let kart = document.getElementById("poke12");
+  kart.addEventListener('click',kartana);
+}
+t4.addEventListener("click", trainer4)
+
+function trainer5(){
+  let charm_Clicker = document.getElementById("poke13");
+  charm_Clicker.addEventListener('click',charman);
+
+  let squirtle_Clicker = document.getElementById("poke14");
+  squirtle_Clicker.addEventListener('click',turtle);
+
+  let jiggly_Clicker = document.getElementById("poke15");
+  jiggly_Clicker.addEventListener('click',jigg);
+}
+t5.addEventListener("click", trainer5)
