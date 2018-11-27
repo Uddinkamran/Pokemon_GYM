@@ -327,7 +327,6 @@ function jigg(){
   });
 }
 
-
 // ************************************ Shakiem's Pokemon **********************
 function zoroark() {
   axios.get("https://fizal.me/pokeapi/api/v2/id/571.json")
@@ -373,40 +372,20 @@ axios.get('https://fizal.me/pokeapi/api/v2/name/primarina.json')
         primarina.display();
   });
 }
-
-
-//******************* Kamran Event Listener ********************************************
-
-
-
- //****************************Ana's listner************************************
-
-
- //************************* Kevin's Event Listener ****************************
-
-
-
-// //********************** Shakiem's event listener *****************************
-
-// ********************************Denny************************************
-// let lopunny_event = document.getElementById("poke1");
-// lopunny_event.addEventListener('click', lopunny);
 //
-// let gardevior_event = document.getElementById("poke2");
-// gardevior_event.addEventListener('click', gardevior);
-//
-// let primarina_event = document.getElementById("poke3");
-// primarina_event.addEventListener('click', primarina);
-
 let t1 = document.getElementById("trainer1");
 let t2 = document.getElementById("trainer2");
 let t3 = document.getElementById("hilda");
 let t4 = document.getElementById("trainer3");
 let t5 = document.getElementById("trainer");
-
-let fullImg = document.getElementById("imgHolder")
+let set1 = document.getElementById("set1");
+let set2 = document.getElementById("set2");
+let set3 = document.getElementById("set3");
+let set4 = document.getElementById("set4");
+let set5 = document.getElementById("set5");
+let fullImg = document.getElementById("imgHolder");
 function trainer1(){
-  fullImg.src
+  fullImg.src = "trtrainerfull.png"
   let meowth_event = document.getElementById("poke1");
   meowth_event.addEventListener('click', meow);
 
@@ -415,10 +394,16 @@ function trainer1(){
 
  let arbok_event = document.getElementById("poke3");
  arbok_event.addEventListener('click', arb);
+ set1.style.visibility ="visible"
+ set2.style.visibility ="hidden"
+ set3.style.visibility ="hidden"
+ set4.style.visibility ="hidden"
+ set5.style.visibility ="hidden"
 }
 t1.addEventListener("click", trainer1)
 
 function trainer2(){
+  fullImg.src = "redFull.png"
   let hoOh_Clicker = document.getElementById("poke4");
   hoOh_Clicker.addEventListener('click',ho_Oh);
 
@@ -427,10 +412,16 @@ function trainer2(){
 
  let ray_Clicker = document.getElementById("poke6");
  ray_Clicker.addEventListener('click',rayq);
+ set2.style.visibility ="visible"
+ set1.style.visibility ="hidden"
+ set3.style.visibility ="hidden"
+ set4.style.visibility ="hidden"
+ set5.style.visibility ="hidden"
 }
 t2.addEventListener("click", trainer2)
 
 function trainer3(){
+  fullImg.src = "https://vignette.wikia.nocookie.net/in-birth/images/6/6c/Victory-hil.png/revision/latest?cb=20141208112202"
   let lopunny_event = document.getElementById("poke7");
   lopunny_event.addEventListener('click', lopunny);
 
@@ -439,10 +430,16 @@ function trainer3(){
 
   let primarina_event = document.getElementById("poke9");
   primarina_event.addEventListener('click', primarina);
+  set3.style.visibility ="visible"
+  set2.style.visibility ="hidden"
+  set1.style.visibility ="hidden"
+  set4.style.visibility ="hidden"
+  set5.style.visibility ="hidden"
 }
 t3.addEventListener("click", trainer3)
 
 function trainer4(){
+  fullImg.src = "Colress-2.png"
   let zoro = document.getElementById("poke10");
   zoro.addEventListener('click',zoroark);
 
@@ -451,10 +448,16 @@ function trainer4(){
 
   let kart = document.getElementById("poke12");
   kart.addEventListener('click',kartana);
+  set4.style.visibility ="visible"
+  set2.style.visibility ="hidden"
+  set3.style.visibility ="hidden"
+  set1.style.visibility ="hidden"
+  set5.style.visibility ="hidden"
 }
 t4.addEventListener("click", trainer4)
 
 function trainer5(){
+  fullImg.src = "tallblue.png"
   let charm_Clicker = document.getElementById("poke13");
   charm_Clicker.addEventListener('click',charman);
 
@@ -463,5 +466,10 @@ function trainer5(){
 
   let jiggly_Clicker = document.getElementById("poke15");
   jiggly_Clicker.addEventListener('click',jigg);
+  set5.style.visibility ="visible"
+  set2.style.visibility ="hidden"
+  set3.style.visibility ="hidden"
+  set4.style.visibility ="hidden"
+  set1.style.visibility ="hidden"
 }
 t5.addEventListener("click", trainer5)
