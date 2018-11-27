@@ -44,7 +44,15 @@ header{
 div.col {
   padding: 0px;
 }
+
+.card {
+  width: 400px;
+  height: 450px;
+
+}
+
 /* ************************************************************************* */
+
 #trainer{
   height: 160px;
   width:120px;
@@ -75,6 +83,27 @@ ol{
   border-color: darkred;
   border-spacing: inherit;
 }
+
+ /* this is the keyframe for trainers to slide in */
+.anim{
+   animation-name: slide;
+   animation-duration: 2s;
+
+ }
+ @keyframes slide {
+   from {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+ }
+
 .card-img-top{
   width: 400px;
   height:300px;
@@ -82,7 +111,15 @@ ol{
 .card-body{
   padding:0;
   margin:0;
+
 }
+.card-text{
+  color: white;
+}
+.card-title{
+  color: white;
+}
+
 .product{
   position: absolute;
   bottom:45px;
