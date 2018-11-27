@@ -315,7 +315,7 @@ axios.get
 // }
 //
 //
-// // Shakiem's Pokemon
+// Shakiem's Pokemon
 // function zoroark() {
 //   axios.get("https://fizal.me/pokeapi/api/v2/id/571.json")
 //   .then(function (response) {
