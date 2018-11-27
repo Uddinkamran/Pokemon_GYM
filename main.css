@@ -2,32 +2,35 @@
   padding:0;
   margin:0;
 }
-
 #bgAll{
-  background-image: url(backgroundImg2.png);
+  background-image: url(backgroundImg3.png);
 }
-
 header{
   background-color: #4dad5b;
   padding:2%;
   text-align: center;
 }
-
 #main{
     width: 900px;
     height: 100vh;
     position: relative;
     margin: 0 auto;
 }
-
 #pokeDex{
  background-color: rgba(255, 0, 0, 0.5);
  background-size: 900px 500px;
  width: 900px;
- height: 605px;
+ height: 695px;
 }
-
-
+#imgHolder{
+  position: absolute;
+  width: 445px;
+  height: 525px;
+}
+#pokeSize{
+  width: 400px;
+  height:300px;
+}
 .poke img {
   /* width: 100%; */
   width: 150px;
@@ -35,7 +38,6 @@ header{
   margin:  10px auto;
   /* border-radius: 50%; */
 }
-
 .col{
   border-style: double;
 }
@@ -49,4 +51,30 @@ div.col {
 }
 #trainer{
   height: 160px;
+  width:120px;
 }
+ol{
+  display:inline-block;
+  border-style: solid;
+  border-color: darkred;
+  border-spacing: inherit;
+}
+ /* this is the keyframe for trainers to slide in */
+.anim{
+   animation-name: slide;
+   animation-duration: 2s;
+
+ }
+ @keyframes slide {
+   from {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+ }
