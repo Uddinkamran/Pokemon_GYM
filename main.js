@@ -350,23 +350,32 @@ function kartana() {
 })
 }
 
-// **************************** Dennys' Pokemon ********************************
+//***************************** Dennys' Pokemon***************************
+// function lopunny(){
 // axios.get('https://fizal.me/pokeapi/api/v2/name/lopunny.json')
 //   .then(function (response) {
-//     let lopunny = new Pokemon(response.data.species.name, response.data.stats[5].base_stat, response.data.stats[4].base_stat, response.data.stats[3].base_stat, response.data.abilities[0].ability.name, response.data.species.name, response.data.sprites.front_shiny);
+//     let lopunny = new Pokemon(response.data.species.name, response.data.stats[5].base_stat, response.data.stats[4].base_stat, response.data.stats[3].base_stat, response.data.abilities[0].ability.name,  "http://i.imgur.com/Y5MhMmG.gif");
 //         lopunny.display();
 //   });
-// axios.get('https://fizal.me/pokeapi/api/v2/name/gardevoir.json')
-//   .then(function (response) {
-//         let gardevior = new Pokemon(response.data.species.name, response.data.stats[5].base_stat, response.data.stats[4].base_stat, response.data.stats[3].base_stat, response.data.abilities[0].ability.name, response.data.species.name, response.data.sprites.front_shiny);
-//         gardevior.display();
-//   });
-// axios.get('https://fizal.me/pokeapi/api/v2/name/primarina.json')
-//   .then(function (response) {
-//     let primarina = new Pokemon(response.data.species.name, response.data.stats[5].base_stat, response.data.stats[4].base_stat, response.data.stats[3].base_stat, response.data.abilities[0].ability.name, response.data.species.name, response.data.sprites.front_shiny);
-//         primarina.display();
-//   });
-
+// }
+//
+//
+// // function gardevior(){
+// //   axios.get('https://fizal.me/pokeapi/api/v2/name/gardevoir.json')
+// //   .then(function (response) {
+// //         let gardevior = new Pokemon(response.data.species.name, response.data.stats[5].base_stat, response.data.stats[4].base_stat, response.data.stats[3].base_stat, response.data.abilities[0].ability.name,  "http://rs38.pbsrc.com/albums/e102/GlowCat/gardevoir_zps7b3a4dab.gif~c200");
+// //         gardevior.display();
+// //   });
+// // }
+// // function primarina(){
+// // axios.get('https://fizal.me/pokeapi/api/v2/name/primarina.json')
+// //   .then(function (response) {
+// //     let primarina = new Pokemon(response.data.species.name, response.data.stats[5].base_stat, response.data.stats[4].base_stat, response.data.stats[3].base_stat, response.data.abilities[0].ability.name, "https://i.pinimg.com/originals/e4/d2/4b/e4d24b35acd40b51b2d292762207a737.gif");
+// //         primarina.display();
+// //   });
+// // }
+// //
+// /
 
 //******************* Kamran Event Listener ********************************************
   //  let hoOh_Clicker = document.getElementById("poke1");
@@ -377,6 +386,7 @@ function kartana() {
   //
   // let ray_Clicker = document.getElementById("poke3");
   // ray_Clicker.addEventListener('click',rayq);
+
 
  //****************************Ana's listner************************************
 //   let charm_Clicker = document.getElementById("poke1");
@@ -400,6 +410,7 @@ function kartana() {
 //  arbok_event.addEventListener('click', arb);
 
 
+
 // //********************** Shakiem's event listener *****************************
 //  let zoro = document.getElementById("poke1");
 //  zoro.addEventListener('click',zoroark);
@@ -409,3 +420,13 @@ function kartana() {
 //
 // let kart = document.getElementById("poke3");
 // kart.addEventListener('click',kartana);
+
+// ********************************Denny************************************
+// let lopunny_event = document.getElementById("poke1");
+// lopunny_event.addEventListener('click', lopunny);
+//
+// let gardevior_event = document.getElementById("poke2");
+// gardevior_event.addEventListener('click', gardevior);
+//
+// let primarina_event = document.getElementById("poke3");
+// primarina_event.addEventListener('click', primarina);
