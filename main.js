@@ -186,7 +186,7 @@ axios.get
       let defense= response.data.stats[3].base_stat;
       console.log("Defense: ", defense);
 
-      let pic= "meowthstrum.gif";
+      let pic= "meowthbounce.gif";
 
       let meowth = new Pokemon(name,hp,attack,defense,ability,pic);
       meowth.display();
@@ -217,7 +217,7 @@ axios.get
       let defense= response.data.stats[3].base_stat;
       console.log("Defense: ", defense);
 
-      let pic= "arbokhiss.gif";
+      let pic= "arbokmoving.gif";
 
       let arbok = new Pokemon(name,hp,attack,defense,ability,pic);
       arb.display();
@@ -247,7 +247,7 @@ function wobb(){
         let defense= response.data.stats[3].base_stat;
         console.log("Defense: ", defense);
 
-        let pic= "wobbuffetfood.gif";
+        let pic= "wobbuffetwave.gif";
 
         let wobbuffet = new Pokemon(name,hp,attack,defense,ability,pic);
         wobbuffet.display();
@@ -279,7 +279,7 @@ function charman(){
         let defense= response.data.stats[3].base_stat;
         console.log("Defense: ", defense);
 
-        let pic= "arbokhiss.gif";
+        let pic= ;
 
         let charmander = new Pokemon(name,hp,attack,defense,ability,pic);
         charmander.display();
@@ -310,7 +310,7 @@ function turtle(){
         let defense= response.data.stats[3].base_stat;
         console.log("Defense: ", defense);
 
-        let pic= "arbokhiss.gif";
+        let pic= ;
 
         let squirtle = new Pokemon(name,hp,attack,defense,ability,pic);
         squirtle.display();
@@ -342,7 +342,7 @@ function jigg(){
         let defense= response.data.stats[3].base_stat;
         console.log("Defense: ", defense);
 
-        let pic= "arbokhiss.gif";
+        let pic= ;
 
         let jigglypuff = new Pokemon(name,hp,attack,defense,ability,pic);
         jigglypuff.display();
