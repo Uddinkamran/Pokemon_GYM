@@ -116,11 +116,15 @@ ol{
 .card-title{
   color: white;
 }
-
 .product{
   position: absolute;
   bottom:45px;
   left:400px;
   width:500px;
   height:100px;
+}
+.pokeTrainer{
+  /* display: inline-block; */
+  height: 50px;
+  width: 50px;
 }
