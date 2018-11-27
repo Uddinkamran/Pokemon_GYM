@@ -350,3 +350,23 @@ function jigg(){
 
   });
 }
+
+// Dennys' Pokemon
+
+axios.get('https://fizal.me/pokeapi/api/v2/name/lopunny.json')
+  .then(function (response) {
+    let lopunny = new Pokemon(response.data.species.name, response.data.stats[5].base_stat, response.data.stats[4].base_stat, response.data.stats[3].base_stat, response.data.abilities[0].ability.name, response.data.species.name, response.data.sprites.front_shiny);
+        lopunny.display();
+  });
+
+axios.get('https://fizal.me/pokeapi/api/v2/name/gardevoir.json')
+  .then(function (response) {
+        let gardevior = new Pokemon(response.data.species.name, response.data.stats[5].base_stat, response.data.stats[4].base_stat, response.data.stats[3].base_stat, response.data.abilities[0].ability.name, response.data.species.name, response.data.sprites.front_shiny);
+        gardevior.display();
+  });
+
+axios.get('https://fizal.me/pokeapi/api/v2/name/primarina.json')
+  .then(function (response) {
+    let primarina = new Pokemon(response.data.species.name, response.data.stats[5].base_stat, response.data.stats[4].base_stat, response.data.stats[3].base_stat, response.data.abilities[0].ability.name, response.data.species.name, response.data.sprites.front_shiny);
+        primarina.display();
+  });
