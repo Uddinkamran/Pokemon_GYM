@@ -369,8 +369,8 @@ function wobb(){
   // ray_Clicker.addEventListener('click',rayq);
 
 // Kevin's Event Listener
-  let meowth_event = document.getElementById("poke1");
-  meowth_event.addEventListener('click', meow);
+ let meowth_event = document.getElementById("poke1");
+ meowth_event.addEventListener('click', meow);
 
  let wobbuffet_event = document.getElementById("poke2");
  wobbuffet_event.addEventListener('click', wobb);
