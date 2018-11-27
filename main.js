@@ -366,3 +366,5 @@ axios.get
 
   let ray_Clicker = document.getElementById("poke3");
   ray_Clicker.addEventListener('click',rayq);
+
+  
