@@ -346,7 +346,28 @@ function jigg(){
 
         let jigglypuff = new Pokemon(name,hp,attack,defense,ability,pic);
         jigglypuff.display();
-
-
   });
+}
+
+// Shakiem's Pokemon
+function zoroark() {
+  axios.get("https://fizal.me/pokeapi/api/v2/id/571.json")
+  .then(function (response) {
+  let somePokemon1 = new Pokemon(response.data.species.name, response.data.stats[5].base_stat, response.data.stats[4].base_stat, response.data.stats[3].base_stat, response.data.abilities[0].ability.name);
+  somePokemon1.display()
+})
+}
+function reshiram() {
+  axios.get("https://fizal.me/pokeapi/api/v2/id/643.json")
+  .then(function (response) {
+  let somePokemon1 = new Pokemon(response.data.species.name, response.data.stats[5].base_stat, response.data.stats[4].base_stat, response.data.stats[3].base_stat, response.data.abilities[0].ability.name);
+  somePokemon1.display()
+})
+}
+function kartana() {
+  axios.get("https://fizal.me/pokeapi/api/v2/id/798.json")
+  .then(function (response) {
+  let somePokemon1 = new Pokemon(response.data.species.name, response.data.stats[5].base_stat, response.data.stats[4].base_stat, response.data.stats[3].base_stat, response.data.abilities[0].ability.name);
+  somePokemon1.display()
+})
 }
