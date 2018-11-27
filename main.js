@@ -350,23 +350,29 @@ function jigg(){
 // })
 // }
 //
-// // Dennys' Pokemon
-// axios.get('https://fizal.me/pokeapi/api/v2/name/lopunny.json')
-//   .then(function (response) {
-//     let lopunny = new Pokemon(response.data.species.name, response.data.stats[5].base_stat, response.data.stats[4].base_stat, response.data.stats[3].base_stat, response.data.abilities[0].ability.name, response.data.species.name, response.data.sprites.front_shiny);
-//         lopunny.display();
-//   });
-// axios.get('https://fizal.me/pokeapi/api/v2/name/gardevoir.json')
-//   .then(function (response) {
-//         let gardevior = new Pokemon(response.data.species.name, response.data.stats[5].base_stat, response.data.stats[4].base_stat, response.data.stats[3].base_stat, response.data.abilities[0].ability.name, response.data.species.name, response.data.sprites.front_shiny);
-//         gardevior.display();
-//   });
-// axios.get('https://fizal.me/pokeapi/api/v2/name/primarina.json')
-//   .then(function (response) {
-//     let primarina = new Pokemon(response.data.species.name, response.data.stats[5].base_stat, response.data.stats[4].base_stat, response.data.stats[3].base_stat, response.data.abilities[0].ability.name, response.data.species.name, response.data.sprites.front_shiny);
-//         primarina.display();
-//   });
+// Dennys' Pokemon
+function lopunny(){
+axios.get('https://fizal.me/pokeapi/api/v2/name/lopunny.json')
+  .then(function (response) {
+    let lopunny = new Pokemon(response.data.species.name, response.data.stats[5].base_stat, response.data.stats[4].base_stat, response.data.stats[3].base_stat, response.data.abilities[0].ability.name,  "http://i.imgur.com/Y5MhMmG.gif");
+        lopunny.display();
+  });
+}
 
+function gardevior(){
+  axios.get('https://fizal.me/pokeapi/api/v2/name/gardevoir.json')
+  .then(function (response) {
+        let gardevior = new Pokemon(response.data.species.name, response.data.stats[5].base_stat, response.data.stats[4].base_stat, response.data.stats[3].base_stat, response.data.abilities[0].ability.name,  "http://rs38.pbsrc.com/albums/e102/GlowCat/gardevoir_zps7b3a4dab.gif~c200");
+        gardevior.display();
+  });
+}
+function primarina(){
+axios.get('https://fizal.me/pokeapi/api/v2/name/primarina.json')
+  .then(function (response) {
+    let primarina = new Pokemon(response.data.species.name, response.data.stats[5].base_stat, response.data.stats[4].base_stat, response.data.stats[3].base_stat, response.data.abilities[0].ability.name, "https://i.pinimg.com/originals/e4/d2/4b/e4d24b35acd40b51b2d292762207a737.gif");
+        primarina.display();
+  });
+}
 
 
 //*******************Event Listener********************************************
@@ -378,6 +384,26 @@ function jigg(){
   //
   // let ray_Clicker = document.getElementById("poke3");
   // ray_Clicker.addEventListener('click',rayq);
+
+
+// Kevin's Event Listener
+ //  let meowth_event = document.getElementById("poke1");
+ //  meowth_event.addEventListener('click', meow);
+ //
+ // let wobbuffet_event = document.getElementById("poke2");
+ // wobbuffet_event.addEventListener('click', wobb);
+ //
+ // let arbok_event = document.getElementById("poke3");
+ // arbok_event.addEventListener('click', arb);
+// Dennys Event addEventListener
+ let lopunny_event = document.getElementById("poke1");
+ lopunny_event.addEventListener('click', lopunny);
+
+let gardevior_event = document.getElementById("poke2");
+gardevior_event.addEventListener('click', gardevior);
+
+let primarina_event = document.getElementById("poke3");
+primarina_event.addEventListener('click', primarina);
 
   let charm_Clicker = document.getElementById("poke1");
   charm_Clicker.addEventListener('click',charman);
@@ -397,4 +423,3 @@ function jigg(){
 
 //  let arbok_event = document.getElementById("poke3");
 //  arbok_event.addEventListener('click', arb);
-/
